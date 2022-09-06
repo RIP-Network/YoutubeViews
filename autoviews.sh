@@ -1,5 +1,6 @@
 #!bin/bash
 
+sudo apt-get install wmctrl
 clear
 echo "_____.___.              __       ___.           "
 echo "\__  |   | ____  __ ___/  |_ __ _\_ |__   ____  "
@@ -23,4 +24,5 @@ open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
 open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
 open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
 open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
-CTRL + C 
+sleep 30
+for xid in $(wmctrl -l | grep -e "Firefox" | grep \ 2 | awk '{print $1}'); do wmctrl -i -c $xid ; done
