@@ -18,9 +18,11 @@ echo "              \/           \/ "
 echo "Creado por RIP-Network          Version 1.0"
 echo 
 echo "/////////////////////////////////////////////////////////////////"
-echo 
+echo
+echo
+echo "/////////////////////////////////////////////////////////////////"
 echo "Edite el archivo usando nano autoviews.sh para poner su video"
-read -p "Cada cuanto tiempo desea parar el programa (predeterminado : 30 ):" $tiempo
+echo"/////////////////////////////////////////////////////////////////"
 sleep 5
 clear 
 open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
