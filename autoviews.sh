@@ -21,8 +21,11 @@ echo "Edite el archivo usando nano autoviews.sh "
 sleep 5
 clear 
 open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
+sleep 2
 open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
+sleep 2
 open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
+sleep 2
 open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
 sleep 30
-for xid in $(wmctrl -l | grep -e "Firefox" | grep \ 2 | awk '{print $1}'); do wmctrl -i -c $xid ; done
+wmctrl -ic "$(wmctrl -l | grep 'Mozilla firefox' | tail -1 | awk '{ print $1 }')"
