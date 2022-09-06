@@ -17,7 +17,8 @@ echo "              \/           \/ "
 echo "Creado por RIP-Network          Version 1.0"
 echo 
 echo 
-echo "Edite el archivo usando nano autoviews.sh "
+echo "Edite el archivo usando nano autoviews.sh para poner su video"
+read -p "Cada cuanto tiempo desea parar el programa (predeterminado : 30 ):" $tiempo
 sleep 5
 clear 
 open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
@@ -27,5 +28,6 @@ sleep 2
 open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
 sleep 2
 open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
-sleep 30
-wmctrl -ic "$(wmctrl -l | grep 'Mozilla firefox' | tail -1 | awk '{ print $1 }')"
+sleep $tiempo
+read -p "Desea volver a ejecutar el programa escriba (bash autoviews.sh ) (si no quiere pulse CTRL+C) ?" $pregunta
+$pregunta
