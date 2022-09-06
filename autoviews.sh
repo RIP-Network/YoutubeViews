@@ -1,6 +1,6 @@
 #!bin/bash
 
-
+clear
 echo "_____.___.              __       ___.           "
 echo "\__  |   | ____  __ ___/  |_ __ _\_ |__   ____  "
 echo " /   |   |/  _ \|  |  \   __\  |  \ __ \_/ __ \ "
@@ -16,8 +16,11 @@ echo "              \/           \/ "
 echo "Creado por RIP-Network          Version 1.0"
 echo 
 echo 
-read -p "Ponga el enlace del video : (ejem https://www.youtube.com/watch?v=fTAiX_Rx4Dw ):" $enlace
-open $enlace
-open $enlace
-open $enlace
-open $enlace
+echo "Edite el archivo usando nano autoviews.sh "
+sleep 5
+clear 
+open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
+open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
+open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
+open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
+CTRL + C 
