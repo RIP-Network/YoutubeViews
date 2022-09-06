@@ -2,6 +2,7 @@
 
 sudo apt-get install wmctrl
 clear
+echo "///////////////////////////////////////////////////////////////"
 echo "_____.___.              __       ___.           "
 echo "\__  |   | ____  __ ___/  |_ __ _\_ |__   ____  "
 echo " /   |   |/  _ \|  |  \   __\  |  \ __ \_/ __ \ "
@@ -16,6 +17,7 @@ echo "  \_/ |__|\___  >\/\_//____  >"
 echo "              \/           \/ "
 echo "Creado por RIP-Network          Version 1.0"
 echo 
+echo "/////////////////////////////////////////////////////////////////"
 echo 
 echo "Edite el archivo usando nano autoviews.sh para poner su video"
 read -p "Cada cuanto tiempo desea parar el programa (predeterminado : 30 ):" $tiempo
@@ -28,6 +30,7 @@ sleep 2
 open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
 sleep 2
 open https://www.youtube.com/watch?v=fTAiX_Rx4Dw
-sleep $tiempo
-read -p "Desea volver a ejecutar el programa escriba (bash autoviews.sh ) (si no quiere pulse CTRL+C) ?" $pregunta
-$pregunta
+sleep 30
+clear
+echo "Los resultaos se notaran cuando ejecute el programa por 5 vez"
+
